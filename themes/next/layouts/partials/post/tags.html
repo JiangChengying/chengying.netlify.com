@@ -1,0 +1,17 @@
+{{ if isset .Params "tags" }}
+{{ if not (eq (len .Params.tags) 0) }} 
+{{ if (eq .Site.Language.Lang "zh") }}
+<div class="post-tags">     
+     {{ range .Params.tags }}
+    <a href="/zh/tags/{{ . | urlize | lower }}" rel="tag" title="{{ . }}">#{{ . }}#</a>
+    {{ end }}
+</div>
+{{ else }}
+<div class="post-tags">     
+    {{ range .Params.tags }}
+   <a href="/en/tags/{{ . | urlize | lower }}" rel="tag" title="{{ . }}">#{{ . }}#</a>
+   {{ end }}
+</div>
+{{ end }}
+{{ end }}
+{{ end }}

@@ -1,0 +1,88 @@
+BaseUrl = "https://chengying.netlify.com"
+Theme =  "next"
+MetaDataFormat =  "yaml"
+CanonifyUrls =  true
+BuildDrafts =  false
+PaginatePath =  "p"
+Paginate = 8
+DisablePathToLower =  false
+HasCJKLanguage = true
+PreserveTaxonomyNames = false
+UglyUrls = false
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+disqusShortname = "chengying-jiang"
+footnotereturnlinkcontents = "↩"
+defaultContentLanguage = "zh"
+defaultContentLanguageInSubdir = true
+
+[languages]
+  [languages.zh]
+    title =  "成英的小站"
+    Subtitle = "云散月明 天容海色"
+  [languages.en]
+    title = "Chengying's blog"
+
+[Params]
+  Introduce = "Lifelong Learning"
+  Description = "成英的小站"
+  Keywords =  "博客,个人,思考,笔记,技术,分享"
+  AuthorImg = "/img/author.jpg"
+  DateFormat = "2006-01-02"
+  YearFormat = "2006年"
+  MonthFormat = "01-02"
+  Fancybox = true
+
+[Author]
+  Name = "姜成英"
+
+[[languages.zh.menu.main]]
+  Name = "首页"
+  Pre = "home"
+  URL = "/zh/"
+  Weight = 1
+[[languages.en.menu.main]]
+  Name = "Home"
+  Pre = "home"
+  URL = "/en/"
+  Weight = 1
+[[languages.zh.menu.main]]
+  Name = "归档"
+  Pre = "archive"
+  URL = "/zh/post/"
+  Weight = 2
+[[languages.en.menu.main]]
+  Name = "Archives"
+  Pre = "archive"
+  URL = "/en/post/"
+  Weight = 2
+[[languages.zh.menu.main]]
+  Name = "关于"
+  Pre = "user"
+  URL = "/zh/about"
+  Weight = 3
+[[languages.en.menu.main]]
+  Name = "About"
+  Pre = "user"
+  URL = "/en/about/"
+  Weight = 3
+[[languages.zh.menu.main]]
+  name = "EN"
+  Pre = "fas fa-language"
+  url = "/en/"
+  weight = 4
+[[languages.en.menu.main]]
+  name = "中文"
+  Pre = "fas fa-language"
+  url = "/zh/"
+  weight = 4
+
+
+[[Params.Socials]]
+  Name = "GitHub"
+  Icon = "github"
+  URL = "https://github.com/JiangChengying"
+
+[[Params.Socials]]
+  Name = "E-mail"
+  Icon = "envelope"
+  URL = "mailto:jchy15089077321@gmail.com"
