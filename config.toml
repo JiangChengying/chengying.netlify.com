@@ -1,4 +1,4 @@
-BaseUrl = "https://chengying.netlify.com"
+BaseUrl = "https://chengying.netlify.app"
 Theme =  "next"
 MetaDataFormat =  "yaml"
 CanonifyUrls =  true
